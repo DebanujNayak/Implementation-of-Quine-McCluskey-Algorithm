@@ -1,9 +1,11 @@
 # Implementation-of-Quine-McCluskey-Algorithm
 #Abstract
+
 The aim of the project is to implement a Boolean logic minimization algorithm than can take multi bit expressions as inputs and generate a structural verilog code of the minimised expression as an output. The code is written in python and does not require any external dependencies to be run.
 
 
 #Introduction
+
 Karnaugh maps provide a systematic way of manually deriving minimum-cost implementations of simple logic functions, but they become impractical for functions of many variables. That is why they are not used directly as algorithms for CAD tools.
 This report describes a python based script that takes multi bit input expressions to create the optimized verilog structural code. The script essentially does a 2 level minimisation for each bit of the output. It uses an algorithm described in the Fundamentals of Digital Logic with Verilog Design by Brown and Vranesic that maps all variables to the vertices of a n-dimensional hypercube. The script uses an adapted minimization technique (that uses cubical representation) described by Willard Quine and Edward McCluskey (the Quine-McCluskey method). 
 .
